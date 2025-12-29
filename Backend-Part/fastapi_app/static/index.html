@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>FastAPI Minimal Frontend</title>
+    <style>
+      body{font-family:Segoe UI,Roboto,Arial;margin:20px}
+      input,button{padding:6px;margin:4px}
+      #items{margin-top:12px}
+      .item{padding:8px;border:1px solid #ddd;margin-bottom:6px}
+    </style>
+  </head>
+  <body>
+    <h2>FastAPI Minimal Frontend</h2>
+    <div>
+      <button id="btnHealth">Check Health</button>
+      <span id="health"></span>
+    </div>
+
+    <h3>Create Item</h3>
+    <div>
+      <input id="name" placeholder="name" />
+      <input id="desc" placeholder="description" />
+      <button id="btnCreate">Create</button>
+    </div>
+
+    <h3>Items</h3>
+    <div>
+      <button id="btnLoad">Load Items</button>
+      <div id="items"></div>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
